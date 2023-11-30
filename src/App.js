@@ -92,7 +92,12 @@ function App() {
       <div className=" w-92 px-10 border-2 h-62 border-black  rounded-lg m-3">
         <h5>webcam</h5>
         <div className="mt-3">
-          <QrReader delay={300} onError={webCamError} onScan={webCamScan} />
+          <QrReader
+            delay={300}
+            onError={webCamError}
+            onScan={webCamScan}
+            facingMode="user"
+          />
         </div>
         <h6>webCamresult: {webCamResult}</h6>
       </div>
